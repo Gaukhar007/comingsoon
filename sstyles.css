@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fdf4f0;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 50px;
+    flex: 1;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    color: #c47b6b;
+}
+
+.content p {
+    color: #333;
+    margin: 20px 0;
+}
+
+.content input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.content button {
+    margin-top: 15px;
+    padding: 15px 25px;
+    font-size: 1em;
+    border: none;
+    background-color: #f39494;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.image {
+    flex: 1;
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image {
+        height: 300px;
+    }
+
+    .content {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
+}
